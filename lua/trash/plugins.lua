@@ -45,6 +45,8 @@ return packer.startup(function(use)
   -- Colorschemes
   use({ "catppuccin/nvim", as = "catppuccin" })
 
+  use("nvim-treesitter/nvim-treesitter")
+
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()
 	end
