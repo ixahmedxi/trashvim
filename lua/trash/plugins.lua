@@ -46,6 +46,7 @@ return packer.startup(function(use)
   use({ "catppuccin/nvim", as = "catppuccin" })
 
   use("nvim-treesitter/nvim-treesitter")
+  use("folke/which-key.nvim")
 
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()
