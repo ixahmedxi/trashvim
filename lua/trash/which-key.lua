@@ -43,7 +43,13 @@ local opts = {
 }
 
 local mappings = {
-  ["n"] = { ":nohl<CR>", "no highlight" }
+  ["t"] = {
+    name = "File Explorer",
+    ["t"] = { "<cmd>NvimTreeToggle<CR>", "Toggle" },
+    ["r"] = { "<cmd>NvimTreeRefresh<CR>", "Refresh" },
+    ["c"] = { "<cmd>NvimTreeClose<CR>", "Close" },
+    ["o"] = { "<cmd>NvimTreeCollapse<CR>", "Collapse" },
+  }
 }
 
 require('which-key').setup(setup)

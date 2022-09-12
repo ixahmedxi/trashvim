@@ -45,6 +45,10 @@ return packer.startup(function(use)
   -- Colorschemes
   use({ "catppuccin/nvim", as = "catppuccin" })
 
+  -- File explorer
+  use("kyazdani42/nvim-web-devicons")
+  use("kyazdani42/nvim-tree.lua")
+
   use("nvim-treesitter/nvim-treesitter")
   use("folke/which-key.nvim")
 
