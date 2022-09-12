@@ -49,6 +49,11 @@ local mappings = {
     ["r"] = { "<cmd>NvimTreeRefresh<CR>", "Refresh" },
     ["c"] = { "<cmd>NvimTreeClose<CR>", "Close" },
     ["o"] = { "<cmd>NvimTreeCollapse<CR>", "Collapse" },
+  },
+  ["b"] = {
+    name = "Buffers",
+    ["l"] = { "<cmd>BufferLineCloseRight<CR>", "Close all to right" },
+    ["h"] = { "<cmd>BufferLineCloseLeft<CR>", "Close all to left" },
   }
 }
 

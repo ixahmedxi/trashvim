@@ -49,6 +49,9 @@ return packer.startup(function(use)
   use("kyazdani42/nvim-web-devicons")
   use("kyazdani42/nvim-tree.lua")
 
+  -- Buffer and status lines
+  use({'akinsho/bufferline.nvim', tag = "v2.*" })
+
   use("nvim-treesitter/nvim-treesitter")
   use("folke/which-key.nvim")
 
