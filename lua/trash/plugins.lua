@@ -51,6 +51,7 @@ return packer.startup(function(use)
 
   -- Buffer and status lines
   use({'akinsho/bufferline.nvim', tag = "v2.*" })
+  use("nvim-lualine/lualine.nvim")
 
   use("nvim-treesitter/nvim-treesitter")
   use("folke/which-key.nvim")
