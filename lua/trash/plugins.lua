@@ -56,6 +56,9 @@ return packer.startup(function(use)
   use("nvim-treesitter/nvim-treesitter")
   use("folke/which-key.nvim")
 
+  -- Telescope
+  use("nvim-telescope/telescope.nvim")
+
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()
 	end

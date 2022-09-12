@@ -54,6 +54,19 @@ local mappings = {
     name = "Buffers",
     ["l"] = { "<cmd>BufferLineCloseRight<CR>", "Close all to right" },
     ["h"] = { "<cmd>BufferLineCloseLeft<CR>", "Close all to left" },
+  },
+  ["f"] = {
+    name = "Find",
+    ["f"] = { "<cmd>lua require('telescope.builtin').live_grep()<CR>", "Text" },
+    ["s"] = { "<cmd>lua require('telescope.builtin').find_files()<CR>", "Files" },
+    ["h"] = { "<cmd>lua require('telescope.builtin').help_tags()<CR>", "Help tags" },
+    ["b"] = { "<cmd>lua require('telescope.builtin').buffers()<CR>", "Buffers" },
+  },
+  ["g"] = {
+    name = "Git",
+    ["s"] =  { "<cmd>lua require('telescope.builtin').git_status()<CR>", "Status" },
+    ["c"] =  { "<cmd>lua require('telescope.builtin').git_commits()<CR>", "Commits" },
+    ["b"] =  { "<cmd>lua require('telescope.builtin').git_branches()<CR>", "Branches" },
   }
 }
 
