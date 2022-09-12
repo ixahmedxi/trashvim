@@ -55,6 +55,7 @@ local mappings = {
     ["l"] = { "<cmd>BufferLineCloseRight<CR>", "Close all to right" },
     ["h"] = { "<cmd>BufferLineCloseLeft<CR>", "Close all to left" },
   },
+  ["x"] = { "<cmd>bd<CR>", "Close buffer" },
   ["f"] = {
     name = "Find",
     ["f"] = { "<cmd>lua require('telescope.builtin').live_grep()<CR>", "Text" },
