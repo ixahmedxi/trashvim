@@ -80,6 +80,7 @@ return packer.startup(function(use)
   
   -- Utils
 	use("lewis6991/impatient.nvim")
+  use("goolord/alpha-nvim")
 
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()
