@@ -70,6 +70,14 @@ return packer.startup(function(use)
 	use("rafamadriz/friendly-snippets")
   use("windwp/nvim-autopairs")
 
+  -- Git
+  use {
+    'lewis6991/gitsigns.nvim',
+    config = function()
+      require('gitsigns').setup()
+    end
+  }
+
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()
 	end
