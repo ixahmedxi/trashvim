@@ -70,6 +70,10 @@ return packer.startup(function(use)
 	use("rafamadriz/friendly-snippets")
   use("windwp/nvim-autopairs")
 
+  -- Comments
+  use("numToStr/Comment.nvim")
+	use("JoosepAlviste/nvim-ts-context-commentstring")
+
   -- Git
   use {
     'lewis6991/gitsigns.nvim',
