@@ -68,6 +68,15 @@ local mappings = {
     ["s"] =  { "<cmd>lua require('telescope.builtin').git_status()<CR>", "Status" },
     ["c"] =  { "<cmd>lua require('telescope.builtin').git_commits()<CR>", "Commits" },
     ["b"] =  { "<cmd>lua require('telescope.builtin').git_branches()<CR>", "Branches" },
+  },
+  ["h"] = {
+    name = "Hop",
+    ["h"] = { "<cmd>HopChar2<cr>", "2 Chars"},
+    ["f"] = { "<cmd>HopChar1<cr>", "1 Chars"},
+    ["p"] = { "<cmd>HopPattern<cr>", "Pattern"},
+    ["l"] = { "<cmd>HopLineStart<cr>", "Line start"},
+    ["v"] = { "<cmd>HopVertical<cr>", "Vertical"},
+    ["w"] = { "<cmd>HopWord<cr>", "Word"}
   }
 }
 
