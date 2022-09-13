@@ -77,6 +77,9 @@ return packer.startup(function(use)
       require('gitsigns').setup()
     end
   }
+  
+  -- Utils
+	use("lewis6991/impatient.nvim")
 
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()
