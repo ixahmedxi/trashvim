@@ -68,6 +68,7 @@ return packer.startup(function(use)
 	use("hrsh7th/cmp-nvim-lsp")
 	use("L3MON4D3/LuaSnip")
 	use("rafamadriz/friendly-snippets")
+  use("windwp/nvim-autopairs")
 
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()
