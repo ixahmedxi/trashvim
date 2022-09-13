@@ -87,6 +87,7 @@ return packer.startup(function(use)
   use("goolord/alpha-nvim")
   use("phaazon/hop.nvim")
   use("lukas-reineke/indent-blankline.nvim")
+  use("ethanholz/nvim-lastplace")
 
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()
