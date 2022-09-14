@@ -9,11 +9,16 @@ m.setup({
     "jsonls",
     "tsserver",
     "eslint",
-    "prisma",
+    "prismals",
     "tailwindcss",
     "html",
     "cssls",
     "astro",
+    "yamlls",
+    "taplo",
+    "marksman",
+    "dockerls",
+    "cssmodulesls"
   },
 })
 
