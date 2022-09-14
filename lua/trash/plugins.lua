@@ -81,6 +81,7 @@ return packer.startup(function(use)
       require('gitsigns').setup()
     end
   }
+  use("sindrets/diffview.nvim")
   
   -- Utils
 	use("lewis6991/impatient.nvim")
