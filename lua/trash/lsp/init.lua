@@ -4,7 +4,17 @@ local m = require('mason-lspconfig')
 local lspconfig = require('lspconfig')
 
 m.setup({
-  ensure_installed = { "sumneko_lua", "jsonls", "tsserver", "eslint" },
+  ensure_installed = {
+    "sumneko_lua",
+    "jsonls",
+    "tsserver",
+    "eslint",
+    "prisma",
+    "tailwindcss",
+    "html",
+    "cssls",
+    "astro",
+  },
 })
 
 require('trash.lsp.config')
