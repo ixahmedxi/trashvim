@@ -45,7 +45,7 @@ dashboard.section.buttons.val = {
 }
 
 local function footer()
-	return "“const is a lie, just like organic labeled food.” – Trash"
+	return "“Should've named my kids tech debt, they're never going away.” – Trash"
 end
 
 dashboard.section.footer.val = footer()
