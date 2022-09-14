@@ -93,6 +93,12 @@ return packer.startup(function(use)
 	use("lukas-reineke/indent-blankline.nvim")
 	use("ethanholz/nvim-lastplace")
 	use("abecodes/tabout.nvim")
+	use({
+		"max397574/better-escape.nvim",
+		config = function()
+			require("better_escape").setup()
+		end,
+	})
 
 	-- LSP
 	use("williamboman/mason.nvim")
