@@ -82,7 +82,7 @@ local mappings = {
     ["s"] = { "<cmd>PackerSync<CR>", "Sync" },
     ["i"] = { "<cmd>PackerInstall<CR>", "Install" },
     ["u"] = { "<cmd>PackerUpdate<CR>", "Update" },
-    ["c"] = { "<cmd>PakcerCompile<CR>", "Compile" },
+    ["c"] = { "<cmd>PackerCompile<CR>", "Compile" },
   }
 }
 

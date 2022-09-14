@@ -53,7 +53,10 @@ return packer.startup(function(use)
   use({'akinsho/bufferline.nvim', tag = "v2.*" })
   use("nvim-lualine/lualine.nvim")
 
+  -- Treesitter
   use("nvim-treesitter/nvim-treesitter")
+  use("windwp/nvim-ts-autotag")
+
   use("folke/which-key.nvim")
 
   -- Telescope
@@ -82,7 +85,7 @@ return packer.startup(function(use)
     end
   }
   use("sindrets/diffview.nvim")
-  
+
   -- Utils
 	use("lewis6991/impatient.nvim")
   use("goolord/alpha-nvim")
