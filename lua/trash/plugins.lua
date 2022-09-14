@@ -91,6 +91,13 @@ return packer.startup(function(use)
   use("ethanholz/nvim-lastplace")
   use("abecodes/tabout.nvim")
 
+  -- LSP
+  use("williamboman/mason.nvim")
+  use("williamboman/mason-lspconfig.nvim")
+  use("neovim/nvim-lspconfig")
+  use("b0o/schemastore.nvim")
+	use("jose-elias-alvarez/typescript.nvim")
+
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()
 	end

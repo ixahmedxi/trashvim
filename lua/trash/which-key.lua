@@ -23,12 +23,6 @@ local setup = {
     padding = { 2, 2, 2, 2 },
     winblend = 0,
   },
-  layout = {
-    height = { min = 4, max = 25 },
-    width = { min = 20, max = 50 },
-    spacing = 3,
-    align = "left",
-  },
   ignore_missing = true,
   hidden = { "<silent>", "<cmd>", "<Cmd>", "<CR>", "call", "lua", "^:", "^ " },
   show_help = false,
@@ -82,6 +76,13 @@ local mappings = {
     ["l"] = { "<cmd>HopLineStart<cr>", "Line start"},
     ["v"] = { "<cmd>HopVertical<cr>", "Vertical"},
     ["w"] = { "<cmd>HopWord<cr>", "Word"}
+  },
+  ["p"] = {
+    name = "Packer",
+    ["s"] = { "<cmd>PackerSync<CR>", "Sync" },
+    ["i"] = { "<cmd>PackerInstall<CR>", "Install" },
+    ["u"] = { "<cmd>PackerUpdate<CR>", "Update" },
+    ["c"] = { "<cmd>PakcerCompile<CR>", "Compile" },
   }
 }
 
