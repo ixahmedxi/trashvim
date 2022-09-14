@@ -18,7 +18,8 @@ m.setup({
     "taplo",
     "marksman",
     "dockerls",
-    "cssmodulesls"
+    "cssmodulesls",
+    "volar"
   },
 })
 
