@@ -6,7 +6,7 @@ vim.opt.shortmess:append("c")
 local options = {
 	backup = false,
 	clipboard = "unnamedplus",
-	cmdheight = 0,
+	cmdheight = 1,
 	completeopt = { "menuone", "noselect" },
 	conceallevel = 0,
 	fileencoding = "utf-8",

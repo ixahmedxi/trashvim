@@ -20,6 +20,7 @@ m.setup({
 		"dockerls",
 		"cssmodulesls",
 		"volar",
+		"angularls",
 	},
 })
 
