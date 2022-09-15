@@ -85,6 +85,7 @@ return packer.startup(function(use)
 		end,
 	})
 	use("sindrets/diffview.nvim")
+	use("tpope/vim-fugitive")
 
 	-- Utils
 	use("lewis6991/impatient.nvim")
@@ -97,6 +98,12 @@ return packer.startup(function(use)
 		"max397574/better-escape.nvim",
 		config = function()
 			require("better_escape").setup()
+		end,
+	})
+	use({
+		"kylechui/nvim-surround",
+		config = function()
+			require("nvim-surround").setup()
 		end,
 	})
 
