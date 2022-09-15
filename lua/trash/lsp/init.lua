@@ -5,6 +5,7 @@ local lspconfig = require("lspconfig")
 
 m.setup({
 	ensure_installed = {
+		"angularls",
 		"sumneko_lua",
 		"jsonls",
 		"tsserver",
