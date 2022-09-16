@@ -88,6 +88,7 @@ local mappings = {
 		["c"] = { "<cmd>PackerCompile<CR>", "Compile" },
 	},
 	["m"] = { "<cmd>Glow<CR>", "Preview Markdown" },
+	["n"] = { "<cmd>nohl<CR>", "No Highlight" },
 }
 
 require("which-key").setup(setup)

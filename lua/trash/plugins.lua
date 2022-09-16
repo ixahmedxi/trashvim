@@ -56,6 +56,7 @@ return packer.startup(function(use)
 	-- Treesitter
 	use("nvim-treesitter/nvim-treesitter")
 	use("windwp/nvim-ts-autotag")
+	use("nvim-treesitter/nvim-treesitter-textobjects")
 
 	use("folke/which-key.nvim")
 
