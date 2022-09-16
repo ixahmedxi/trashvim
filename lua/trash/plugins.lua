@@ -72,6 +72,7 @@ return packer.startup(function(use)
 	use("L3MON4D3/LuaSnip")
 	use("rafamadriz/friendly-snippets")
 	use("windwp/nvim-autopairs")
+	use("onsails/lspkind.nvim")
 
 	-- Comments
 	use("numToStr/Comment.nvim")
