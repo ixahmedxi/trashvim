@@ -110,6 +110,12 @@ return packer.startup(function(use)
 	})
 	use("ellisonleao/glow.nvim")
 	use("famiu/bufdelete.nvim")
+	use({
+		"sitiom/nvim-numbertoggle",
+		config = function()
+			require("numbertoggle").setup()
+		end,
+	})
 
 	-- LSP
 	use("williamboman/mason.nvim")
