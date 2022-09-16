@@ -107,6 +107,7 @@ return packer.startup(function(use)
 			require("nvim-surround").setup()
 		end,
 	})
+	use("ellisonleao/glow.nvim")
 
 	-- LSP
 	use("williamboman/mason.nvim")

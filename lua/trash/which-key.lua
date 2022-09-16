@@ -87,6 +87,7 @@ local mappings = {
 		["u"] = { "<cmd>PackerUpdate<CR>", "Update" },
 		["c"] = { "<cmd>PackerCompile<CR>", "Compile" },
 	},
+	["m"] = { "<cmd>Glow<CR>", "Preview Markdown" },
 }
 
 require("which-key").setup(setup)
