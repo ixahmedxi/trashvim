@@ -1,6 +1,13 @@
 local M = {}
 
 M.on_attach = function(client, bufnr)
+	require("lsp_signature").on_attach({
+		bind = true,
+		handler_opts = {
+			border = "rounded",
+		},
+	}, bufnr)
+
 	if client.name == "tsserver" then
 		client.resolved_capabilities.document_formatting = false
 	end
