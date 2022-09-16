@@ -109,6 +109,7 @@ return packer.startup(function(use)
 		end,
 	})
 	use("ellisonleao/glow.nvim")
+	use("famiu/bufdelete.nvim")
 
 	-- LSP
 	use("williamboman/mason.nvim")
