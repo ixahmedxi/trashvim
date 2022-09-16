@@ -117,6 +117,7 @@ return packer.startup(function(use)
 			require("numbertoggle").setup()
 		end,
 	})
+	use("Pocco81/true-zen.nvim")
 
 	-- LSP
 	use("williamboman/mason.nvim")

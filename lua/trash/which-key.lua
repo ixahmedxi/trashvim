@@ -91,6 +91,7 @@ local mappings = {
 	},
 	["m"] = { "<cmd>Glow<CR>", "Preview Markdown" },
 	["n"] = { "<cmd>nohl<CR>", "No Highlight" },
+	["z"] = { "<cmd>TZMinimalist<CR>", "Zen mode" },
 }
 
 require("which-key").setup(setup)
