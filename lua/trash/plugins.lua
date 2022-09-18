@@ -118,6 +118,7 @@ return packer.startup(function(use)
 		end,
 	})
 	use("Pocco81/true-zen.nvim")
+	use("aserowy/tmux.nvim")
 
 	-- LSP
 	use("williamboman/mason.nvim")

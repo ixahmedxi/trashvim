@@ -2,10 +2,7 @@ local M = {}
 
 M.on_attach = function(client, bufnr)
 	require("lsp_signature").on_attach({
-		bind = true,
-		handler_opts = {
-			border = "rounded",
-		},
+		floating_window = false,
 	}, bufnr)
 
 	if client.name == "tsserver" then
