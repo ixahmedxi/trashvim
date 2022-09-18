@@ -1,3 +1,9 @@
+local which_key = safe_require("which-key")
+
+if not which_key then
+	return
+end
+
 local setup = {
 	plugins = {
 		marks = true,
@@ -96,5 +102,5 @@ local mappings = {
 	["z"] = { "<cmd>TZMinimalist<CR>", "Zen mode" },
 }
 
-require("which-key").setup(setup)
-require("which-key").register(mappings, opts)
+which_key.setup(setup)
+which_key.register(mappings, opts)

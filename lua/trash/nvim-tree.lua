@@ -1,6 +1,18 @@
-local tree_cb = require("nvim-tree.config").nvim_tree_callback
+local nvim_tree = safe_require("nvim-tree")
 
-require("nvim-tree").setup({
+if not nvim_tree then
+	return
+end
+
+local nvim_tree_config = safe_require("nvim-tree.config")
+
+if not nvim_tree_config then
+	return
+end
+
+local tree_cb = nvim_tree_config.nvim_tree_callback
+
+nvim_tree.setup({
 	hijack_netrw = true,
 	view = {
 		hide_root_folder = true,

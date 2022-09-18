@@ -23,8 +23,15 @@ vim.cmd([[
   augroup end
 ]])
 
-local status_ok, packer = pcall(require, "packer")
-if not status_ok then
+local packer = safe_require("packer")
+
+if not packer then
+	return
+end
+
+local packer_util = safe_require("packer.util")
+
+if not packer_util then
 	return
 end
 
@@ -32,7 +39,7 @@ end
 packer.init({
 	display = {
 		open_fn = function()
-			return require("packer.util").float({ border = "rounded" })
+			return packer_util.float({ border = "rounded" })
 		end,
 	},
 })
@@ -120,6 +127,7 @@ return packer.startup(function(use)
 	use("Pocco81/true-zen.nvim")
 	use("aserowy/tmux.nvim")
 	use("akinsho/toggleterm.nvim")
+	use("rcarriga/nvim-notify")
 
 	-- LSP
 	use("williamboman/mason.nvim")

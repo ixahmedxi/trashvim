@@ -1,4 +1,16 @@
-require("mason-null-ls").setup({
+local mason_null_ls = safe_require("mason-null-ls")
+
+if not mason_null_ls then
+	return
+end
+
+local null_ls = safe_require("null-ls")
+
+if not null_ls then
+	return
+end
+
+mason_null_ls.setup({
 	automatic_installation = false,
 	ensure_installed = {
 		"stylua",
@@ -6,13 +18,14 @@ require("mason-null-ls").setup({
 	},
 })
 
-require("mason-null-ls").check_install(true)
+mason_null_ls.check_install(true)
 
 local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
-require("null-ls").setup({
+
+null_ls.setup({
 	sources = {
-		require("null-ls").builtins.formatting.stylua,
-		require("null-ls").builtins.formatting.prettier,
+		null_ls.builtins.formatting.stylua,
+		null_ls.builtins.formatting.prettier,
 	},
 	on_attach = function(client, bufnr)
 		if client.supports_method("textDocument/formatting") then
@@ -21,7 +34,7 @@ require("null-ls").setup({
 				group = augroup,
 				buffer = bufnr,
 				callback = function()
-          vim.lsp.buf.formatting_sync()
+					vim.lsp.buf.formatting_sync()
 				end,
 			})
 		end

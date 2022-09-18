@@ -1,5 +1,6 @@
-local status_ok, trueZen = pcall(require, "true-zen")
-if not status_ok then
+local trueZen = safe_require("true-zen")
+
+if not trueZen then
 	return
 end
 

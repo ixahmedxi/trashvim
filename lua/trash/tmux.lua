@@ -1,5 +1,6 @@
-local status_ok, tmux = pcall(require, "tmux")
-if not status_ok then
+local tmux = safe_require("tmux")
+
+if not tmux then
 	return
 end
 

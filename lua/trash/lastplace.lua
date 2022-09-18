@@ -1,5 +1,6 @@
-local status_ok, lastplace = pcall(require, "nvim-lastplace")
-if not status_ok then
+local lastplace = safe_require("nvim-lastplace")
+
+if not lastplace then
 	return
 end
 

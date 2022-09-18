@@ -1,9 +1,15 @@
-local status_ok, alpha = pcall(require, "alpha")
-if not status_ok then
+local alpha = safe_require("alpha")
+
+if not alpha then
 	return
 end
 
-local dashboard = require("alpha.themes.dashboard")
+local dashboard = safe_require("alpha.themes.dashboard")
+
+if not dashboard then
+	return
+end
+
 dashboard.section.header.val = {
 	[[                        .^!777777~      ]],
 	[[                 .^!77~^:......~Y~      ]],

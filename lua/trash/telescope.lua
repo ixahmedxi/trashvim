@@ -1,6 +1,15 @@
-local actions = require("telescope.actions")
+local telescope = safe_require("telescope")
+local actions = safe_require("telescope.actions")
 
-require("telescope").setup({
+if not telescope then
+	return
+end
+
+if not actions then
+	return
+end
+
+telescope.setup({
 	defaults = {
 		file_ignore_patterns = {
 			".git/",

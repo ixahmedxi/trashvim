@@ -1,7 +1,22 @@
-require("mason").setup()
+local mason = safe_require("mason")
 
-local m = require("mason-lspconfig")
-local lspconfig = require("lspconfig")
+if not mason then
+	return
+end
+
+mason.setup()
+
+local m = safe_require("mason-lspconfig")
+
+if not m then
+	return
+end
+
+local lspconfig = safe_require("lspconfig")
+
+if not lspconfig then
+	return
+end
 
 m.setup({
 	ensure_installed = {
@@ -26,13 +41,25 @@ m.setup({
 
 require("trash.lsp.config")
 
+local cmp_nvim_lsp = safe_require("cmp_nvim_lsp")
+
+if not cmp_nvim_lsp then
+	return
+end
+
 local capabilities = vim.lsp.protocol.make_client_capabilities()
-capabilities = require("cmp_nvim_lsp").update_capabilities(capabilities)
+capabilities = cmp_nvim_lsp.update_capabilities(capabilities)
 
 local opts = {
 	capabilities = capabilities,
 	on_attach = require("trash.lsp.on_attach").on_attach,
 }
+
+local typescript = safe_require("typescript")
+
+if not typescript then
+	return
+end
 
 m.setup_handlers({
 	function(server_name)
@@ -45,7 +72,7 @@ m.setup_handlers({
 		lspconfig[server_name].setup(opts)
 	end,
 	["tsserver"] = function()
-		require("typescript").setup({
+		typescript.setup({
 			server = opts,
 		})
 	end,

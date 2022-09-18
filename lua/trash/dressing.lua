@@ -1,6 +1,6 @@
-local status_ok, dressing = pcall(require, "dressing")
+local dressing = safe_require("dressing")
 
-if not status_ok then
+if not dressing then
 	return
 end
 

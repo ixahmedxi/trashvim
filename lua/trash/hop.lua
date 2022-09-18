@@ -1,5 +1,6 @@
-local status_ok, hop = pcall(require, "hop")
-if not status_ok then
+local hop = safe_require("hop")
+
+if not hop then
 	return
 end
 

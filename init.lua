@@ -1,3 +1,4 @@
+require("trash.utils")
 require("trash.options")
 require("trash.mappings")
 require("trash.plugins")

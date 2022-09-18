@@ -1,4 +1,10 @@
-require("nvim-treesitter.configs").setup({
+local treesitter = safe_require("nvim-treesitter.configs")
+
+if not treesitter then
+	return
+end
+
+treesitter.setup({
 	ensure_installed = {
 		"lua",
 		"markdown",

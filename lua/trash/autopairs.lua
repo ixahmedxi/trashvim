@@ -1,4 +1,10 @@
-require("nvim-autopairs").setup({
+local autopairs = safe_require("nvim-autopairs")
+
+if not autopairs then
+	return
+end
+
+autopairs.setup({
 	check_ts = true,
 	ts_config = {
 		lua = { "string", "source" },
@@ -19,9 +25,16 @@ require("nvim-autopairs").setup({
 	},
 })
 
-local cmp_autopairs = require("nvim-autopairs.completion.cmp")
-local cmp_status_ok, cmp = pcall(require, "cmp")
-if not cmp_status_ok then
+local cmp_autopairs = safe_require("nvim-autopairs.completion.cmp")
+
+if not cmp_autopairs then
 	return
 end
+
+local cmp = safe_require("cmp")
+
+if not cmp then
+	return
+end
+
 cmp.event:on("confirm_done", cmp_autopairs.on_confirm_done({ map_char = { tex = "" } }))

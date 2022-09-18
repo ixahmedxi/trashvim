@@ -1,7 +1,13 @@
+local schemastore = safe_require("schemastore")
+
+if not schemastore then
+	return
+end
+
 return {
 	settings = {
 		json = {
-			schemas = require("schemastore").json.schemas(),
+			schemas = schemastore.json.schemas(),
 			validate = { enable = true },
 		},
 	},

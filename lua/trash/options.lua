@@ -2,6 +2,7 @@ vim.cmd("set whichwrap+=<,>,[,],h,l")
 vim.cmd([[set iskeyword+=-]])
 
 vim.opt.shortmess:append("c")
+vim.notify = require("notify")
 
 local options = {
 	backup = false,

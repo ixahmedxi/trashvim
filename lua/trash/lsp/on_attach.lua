@@ -1,7 +1,13 @@
+local lsp_signature = safe_require("lsp_signature")
+
+if not lsp_signature then
+	return
+end
+
 local M = {}
 
 M.on_attach = function(client, bufnr)
-	require("lsp_signature").on_attach({
+	lsp_signature.on_attach({
 		floating_window = false,
 	}, bufnr)
 
