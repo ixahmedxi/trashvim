@@ -130,6 +130,7 @@ return packer.startup(function(use)
 	use("WhoIsSethDaniel/mason-tool-installer.nvim")
 	use("jose-elias-alvarez/null-ls.nvim")
 	use("ray-x/lsp_signature.nvim")
+	use("stevearc/dressing.nvim")
 
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()
