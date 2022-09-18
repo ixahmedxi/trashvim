@@ -28,6 +28,7 @@ require("nvim-treesitter.configs").setup({
 	},
 	rainbow = {
 		enable = true,
+		extended_mode = false,
 	},
 	autotag = {
 		enable = true,
@@ -81,3 +82,5 @@ require("nvim-treesitter.configs").setup({
 		},
 	},
 })
+
+vim.cmd([[hi rainbowcol1 guifg=#7f849c]])
