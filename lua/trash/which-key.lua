@@ -100,6 +100,18 @@ local mappings = {
 	["m"] = { "<cmd>Glow<CR>", "Preview Markdown" },
 	["n"] = { "<cmd>nohl<CR>", "No Highlight" },
 	["z"] = { "<cmd>TZMinimalist<CR>", "Zen mode" },
+	["l"] = {
+		name = "LSP",
+		["t"] = {
+			name = "TypeScript",
+			["a"] = { "<cmd>TypescriptAddMissingImports<CR>", "Add missing imports" },
+			["o"] = { "<cmd>TypescriptOrganizeImports<CR>", "Organize imports" },
+			["u"] = { "<cmd>TypescriptRemoveUnused<CR>", "Remove unused" },
+			["f"] = { "<cmd>TypescriptFixAll<CR>", "Fix all" },
+			["g"] = { "<cmd>TypescriptGoToSourceDefinition<CR>", "Go to source definition" },
+			["r"] = { "<cmd>TypescriptRenameFile<CR>", "Rename file" },
+		},
+	},
 }
 
 which_key.setup(setup)
