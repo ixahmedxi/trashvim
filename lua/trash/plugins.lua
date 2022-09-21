@@ -23,23 +23,13 @@ vim.cmd([[
   augroup end
 ]])
 
-local packer = safe_require("packer")
-
-if not packer then
-	return
-end
-
-local packer_util = safe_require("packer.util")
-
-if not packer_util then
-	return
-end
+local packer = require("packer")
 
 -- Have packer use a popup window
 packer.init({
 	display = {
 		open_fn = function()
-			return packer_util.float({ border = "rounded" })
+			return require("packer.util").float({ border = "rounded" })
 		end,
 	},
 })
