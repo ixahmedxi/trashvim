@@ -1,9 +1,3 @@
-vim.cmd("set whichwrap+=<,>,[,],h,l")
-vim.cmd([[set iskeyword+=-]])
-
-vim.opt.shortmess:append("c")
-vim.notify = require("notify")
-
 local options = {
 	backup = false,
 	clipboard = "unnamedplus",
@@ -43,3 +37,8 @@ local options = {
 for k, v in pairs(options) do
 	vim.opt[k] = v
 end
+
+vim.cmd("set whichwrap+=<,>,[,],h,l")
+vim.cmd([[set iskeyword+=-]])
+
+vim.opt.shortmess:append("c")
