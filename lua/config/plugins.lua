@@ -43,6 +43,24 @@ return packer.startup(function(use)
   -- Colorschemes
   use("kvrohit/mellow.nvim")
 
+  -- Treesitter
+	use("nvim-treesitter/nvim-treesitter")
+	use("windwp/nvim-ts-autotag")
+	use("nvim-treesitter/nvim-treesitter-textobjects")
+	use("p00f/nvim-ts-rainbow")
+	use("windwp/nvim-autopairs")
+
+  -- CMP
+  use("hrsh7th/nvim-cmp")
+	use("hrsh7th/cmp-buffer")
+	use("hrsh7th/cmp-path")
+	use("hrsh7th/cmp-cmdline")
+	use("saadparwaiz1/cmp_luasnip")
+	use("hrsh7th/cmp-nvim-lsp")
+	use("L3MON4D3/LuaSnip")
+	use("rafamadriz/friendly-snippets")
+	use("onsails/lspkind.nvim")
+
   -- Editing
   use("max397574/better-escape.nvim")
 
