@@ -33,7 +33,7 @@ m.setup({
 		"taplo",
 		"marksman",
 		"dockerls",
-		"cssmodulesls",
+		"cssmodules_ls",
 		"volar",
 		"angularls",
 	},
