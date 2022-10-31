@@ -1,7 +1,6 @@
 local options = {
 	backup = false,
-	clipboard = "unnamedplus",
-	cmdheight = 0,
+	cmdheight = 1,
 	laststatus = 3,
 	completeopt = { "menuone", "noselect" },
 	conceallevel = 0,
@@ -32,6 +31,7 @@ local options = {
 	wrap = false,
 	scrolloff = 8,
 	sidescrolloff = 8,
+  guicursor = ""
 }
 
 for k, v in pairs(options) do

@@ -61,6 +61,11 @@ return packer.startup(function(use)
 	use("rafamadriz/friendly-snippets")
 	use("onsails/lspkind.nvim")
 
+  -- LSP
+  use("williamboman/mason.nvim")
+  use("williamboman/mason-lspconfig.nvim")
+  use("neovim/nvim-lspconfig")
+
   -- Editing
   use("max397574/better-escape.nvim")
 
