@@ -48,7 +48,7 @@ if not cmp_nvim_lsp then
 end
 
 local capabilities = vim.lsp.protocol.make_client_capabilities()
-capabilities = cmp_nvim_lsp.default_capabilities
+capabilities = cmp_nvim_lsp.default_capabilities()
 
 local opts = {
 	capabilities = capabilities,
