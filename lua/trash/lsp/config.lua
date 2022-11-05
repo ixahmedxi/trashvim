@@ -10,7 +10,7 @@ for _, sign in ipairs(signs) do
 end
 
 local config = {
-	virtual_text = false,
+	virtual_text = true,
 	signs = {
 		active = signs,
 	},
@@ -18,7 +18,7 @@ local config = {
 	underline = true,
 	severity_sort = true,
 	float = {
-		focusable = false,
+		focusable = true,
 		style = "minmal",
 		border = "rounded",
 		source = "always",
