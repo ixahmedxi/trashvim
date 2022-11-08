@@ -42,11 +42,12 @@ return packer.startup(function(use)
   use("kyazdani42/nvim-web-devicons")
   use("MunifTanjim/nui.nvim")
 
-  -- File explorer
+  -- Navigation
   use({
     "nvim-neo-tree/neo-tree.nvim",
     branch = "v2.x",
   })
+  use("folke/which-key.nvim")
 
   -- Colorschemes
   use("kvrohit/mellow.nvim")
