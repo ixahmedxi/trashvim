@@ -49,6 +49,9 @@ return packer.startup(function(use)
   })
   use("folke/which-key.nvim")
 
+  -- Buffer
+  use("lewis6991/gitsigns.nvim")
+
   -- Colorschemes
   use("kvrohit/mellow.nvim")
 
