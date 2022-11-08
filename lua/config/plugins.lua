@@ -39,6 +39,14 @@ return packer.startup(function(use)
 	use("wbthomason/packer.nvim")
 	use("nvim-lua/plenary.nvim")
   use("miversen33/import.nvim")
+  use("kyazdani42/nvim-web-devicons")
+  use("MunifTanjim/nui.nvim")
+
+  -- File explorer
+  use({
+    "nvim-neo-tree/neo-tree.nvim",
+    branch = "v2.x",
+  })
 
   -- Colorschemes
   use("kvrohit/mellow.nvim")
