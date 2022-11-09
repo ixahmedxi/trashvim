@@ -49,11 +49,15 @@ return packer.startup(function(use)
   })
   use("folke/which-key.nvim")
 
-  -- Buffer
+  -- Buffers
   use("lewis6991/gitsigns.nvim")
+  use("nvim-lualine/lualine.nvim")
+  use({'akinsho/bufferline.nvim', tag = "v3.*"})
+  use("famiu/bufdelete.nvim")
 
   -- Colorschemes
   use("kvrohit/mellow.nvim")
+  use("Yazeed1s/oh-lucy.nvim")
 
   -- Treesitter
 	use("nvim-treesitter/nvim-treesitter")
