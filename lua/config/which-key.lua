@@ -40,7 +40,14 @@ import("which-key", function (whichKey)
         ["e"] = { "<cmd>BufferLineSortByExtension<cr>", "By extension" },
         ["r"] = { "<cmd>BufferLineSortByRelativeDirectory<cr>", "By relative directory" },
       }
-    }
+    },
+    ["p"] = {
+      name = "Packer",
+      ["s"] = { "<cmd>PackerSync<CR>", "Sync" },
+      ["i"] = { "<cmd>PackerInstall<CR>", "Install" },
+      ["u"] = { "<cmd>PackerUpdate<CR>", "Update" },
+      ["c"] = { "<cmd>PackerCompile<CR>", "Compile" },
+    },
   }
 
   whichKey.setup(setup)
