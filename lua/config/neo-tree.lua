@@ -3,6 +3,7 @@ vim.cmd([[ let g:neo_tree_remove_legacy_commands = 1 ]])
 import("neo-tree", function (neoTree)
   neoTree.setup({
     close_if_last_window = true,
+    hide_root_node = true,
     popup_border_style = "rounded",
     enable_git_status = true,
     enable_diagnostics = true,
@@ -24,6 +25,9 @@ import("neo-tree", function (neoTree)
       },
       follow_current_file = true,
       use_libuv_file_watcher = true,
+    },
+    source_selector = {
+      winbar = true
     }
   })
 end)

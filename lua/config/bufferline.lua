@@ -14,7 +14,7 @@ import("bufferline", function (bufferline)
         {
           filetype = "neo-tree",
           text = "",
-          padding = 1
+          padding = 0
         }
       }
     },
