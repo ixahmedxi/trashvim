@@ -48,6 +48,13 @@ import("which-key", function (whichKey)
       ["u"] = { "<cmd>PackerUpdate<CR>", "Update" },
       ["c"] = { "<cmd>PackerCompile<CR>", "Compile" },
     },
+    ["f"] = {
+      name = "Find",
+      ["f"] = { "<cmd>lua require('telescope.builtin').live_grep()<CR>", "Text" },
+      ["s"] = { "<cmd>lua require('telescope.builtin').find_files()<CR>", "Files" },
+      ["h"] = { "<cmd>lua require('telescope.builtin').help_tags()<CR>", "Help tags" },
+      ["b"] = { "<cmd>lua require('telescope.builtin').buffers()<CR>", "Buffers" },
+    },
   }
 
   whichKey.setup(setup)
