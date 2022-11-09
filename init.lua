@@ -1,7 +1,7 @@
 require("import")
+require("config.plugins")
 require("config.options")
 require("config.keymaps")
-require("config.plugins")
 require("config.colorschemes")
 require("config.better-escape")
 require("config.treesitter")

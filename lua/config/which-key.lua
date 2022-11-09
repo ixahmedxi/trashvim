@@ -55,6 +55,12 @@ import("which-key", function (whichKey)
       ["h"] = { "<cmd>lua require('telescope.builtin').help_tags()<CR>", "Help tags" },
       ["b"] = { "<cmd>lua require('telescope.builtin').buffers()<CR>", "Buffers" },
     },
+    ["g"] = {
+      name = "Git",
+      ["s"] = { "<cmd>lua require('telescope.builtin').git_status()<CR>", "Status" },
+      ["c"] = { "<cmd>lua require('telescope.builtin').git_commits()<CR>", "Commits" },
+      ["b"] = { "<cmd>lua require('telescope.builtin').git_branches()<CR>", "Branches" },
+    },
   }
 
   whichKey.setup(setup)
