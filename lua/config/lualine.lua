@@ -20,6 +20,7 @@ import("lualine", function (lualine)
       globalstatus = true,
       component_separators = { left = "", right = "" },
       section_separators = { left = "", right = "" },
+      disabled_filetypes = { "neo-tree-popup" }
     },
     sections = {
       lualine_a = {'mode'},
