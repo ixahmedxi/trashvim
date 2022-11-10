@@ -91,6 +91,8 @@ return packer.startup(function(use)
   use("b0o/SchemaStore.nvim")
   use("jose-elias-alvarez/typescript.nvim")
   use("simrat39/symbols-outline.nvim")
+  use("j-hui/fidget.nvim")
+  use("ray-x/lsp_signature.nvim")
 
   -- Editing
   use("max397574/better-escape.nvim")

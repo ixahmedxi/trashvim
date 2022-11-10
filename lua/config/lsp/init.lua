@@ -1,4 +1,6 @@
 require("config.lsp.config")
+require("config.lsp.fidget")
+require("config.lsp.signature")
 
 import({"mason", "mason-lspconfig", "lspconfig", "cmp_nvim_lsp"}, function(modules)
   local mason = modules.mason
