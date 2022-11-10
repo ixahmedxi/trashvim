@@ -93,6 +93,12 @@ return packer.startup(function(use)
   use("simrat39/symbols-outline.nvim")
   use("j-hui/fidget.nvim")
   use("ray-x/lsp_signature.nvim")
+  use("smjonas/inc-rename.nvim")
+  use({
+    'weilbith/nvim-code-action-menu',
+    cmd = 'CodeActionMenu',
+  })
+  use("kosayoda/nvim-lightbulb")
 
   -- Editing
   use("max397574/better-escape.nvim")

@@ -71,8 +71,8 @@ import("which-key", function (whichKey)
       ["K"] = { "<cmd>lua vim.lsp.buf.hover()<cr>", "Hover" },
       ["k"] = { "<cmd>lua vim.lsp.buf.signature_help()<cr>", "Signature help" },
       ["s"] = { "<cmd>SymbolsOutline<cr>", "Toggle symbols outline" },
-      ["n"] = { "<cmd>lua vim.lsp.buf.rename()<cr>", "Rename" },
-      ["a"] = { "<cmd>lua vim.lsp.buf.code_action()<cr>", "Code actions" },
+      ["n"] = { ":IncRename ", "Rename" },
+      ["a"] = { "<cmd>CodeActionMenu<cr>", "Code actions" },
       ["f"] = { "<cmd>lua vim.lsp.buf.formatting()<cr>", "Format" },
       ["l"] = { "<cmd>lua vim.diagnostic.open_float()<cr>", "Open float" },
       ["t"] = {
