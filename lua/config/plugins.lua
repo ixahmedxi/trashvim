@@ -90,6 +90,7 @@ return packer.startup(function(use)
   use("neovim/nvim-lspconfig")
   use("b0o/SchemaStore.nvim")
   use("jose-elias-alvarez/typescript.nvim")
+  use("simrat39/symbols-outline.nvim")
 
   -- Editing
   use("max397574/better-escape.nvim")
