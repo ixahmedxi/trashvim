@@ -103,6 +103,9 @@ return packer.startup(function(use)
   -- Editing
   use("max397574/better-escape.nvim")
 
+  -- UI
+  use("goolord/alpha-nvim")
+
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()
 	end
