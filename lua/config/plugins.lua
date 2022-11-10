@@ -108,6 +108,7 @@ return packer.startup(function(use)
 
   -- Editing
   use("max397574/better-escape.nvim")
+  use("ethanholz/nvim-lastplace")
 
   -- UI
   use("goolord/alpha-nvim")
