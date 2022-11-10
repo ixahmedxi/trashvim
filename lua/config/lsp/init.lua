@@ -37,7 +37,8 @@ import({"mason", "mason-lspconfig", "lspconfig", "cmp_nvim_lsp"}, function(modul
   })
 
   local opts = {
-    capabilities = cmpLsp.default_capabilities()
+    capabilities = cmpLsp.default_capabilities(),
+    on_attach = require("config.lsp.on_attach").on_attach
   }
 
   masonLspConfig.setup_handlers({
