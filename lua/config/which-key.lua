@@ -85,6 +85,7 @@ import("which-key", function (whichKey)
         ["r"] = { "<cmd>TypescriptRenameFile<CR>", "Rename file" },
       }
     },
+    ["c"] = {"<cmd>lua require('telescope.builtin').colorscheme()<cr>", "Change colorscheme" }
   }
 
   whichKey.setup(setup)

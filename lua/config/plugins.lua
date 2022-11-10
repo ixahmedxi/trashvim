@@ -58,6 +58,12 @@ return packer.startup(function(use)
   -- Colorschemes
   use("kvrohit/mellow.nvim")
   use("Yazeed1s/oh-lucy.nvim")
+  use({ "catppuccin/nvim", as = "catppuccin" })
+  use("marko-cerovac/material.nvim")
+  use("folke/tokyonight.nvim")
+  use("olivercederborg/poimandres.nvim")
+  use("tiagovla/tokyodark.nvim")
+  use("projekt0n/github-nvim-theme")
 
   -- Treesitter
 	use("nvim-treesitter/nvim-treesitter")

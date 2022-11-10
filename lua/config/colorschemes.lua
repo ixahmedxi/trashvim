@@ -1,3 +1,5 @@
 vim.g.mellow_transparent = true
-vim.cmd [[colorscheme mellow]]
+vim.g.material_style = "deep ocean"
+
+vim.cmd [[colorscheme catppuccin]]
 
