@@ -51,6 +51,13 @@ import({"mason", "mason-lspconfig", "lspconfig", "cmp_nvim_lsp"}, function(modul
 
       modules.lspconfig[server_name].setup(opts)
     end,
+    ["tsserver"] = function()
+      import("typescript", function (typescript)
+        typescript.setup({
+          server = opts,
+        })
+      end)
+    end,
   })
 
 end)

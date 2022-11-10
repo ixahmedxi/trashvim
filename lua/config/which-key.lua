@@ -61,6 +61,29 @@ import("which-key", function (whichKey)
       ["c"] = { "<cmd>lua require('telescope.builtin').git_commits()<CR>", "Commits" },
       ["b"] = { "<cmd>lua require('telescope.builtin').git_branches()<CR>", "Branches" },
     },
+    ["l"] = {
+      name = "LSP",
+      ["D"] = { "<cmd>lua vim.lsp.buf.declaration()<cr>", "Declaration" },
+      ["d"] = { "<cmd>lua vim.lsp.buf.definition()<cr>", "Definition" },
+      ["T"] = { "<cmd>lua vim.lsp.buf.type_definition()<cr>", "Type definition" },
+      ["i"] = { "<cmd>lua vim.lsp.buf.implementation()<cr>", "Implementation" },
+      ["r"] = { "<cmd>lua vim.lsp.buf.references()<cr>", "References" },
+      ["K"] = { "<cmd>lua vim.lsp.buf.hover()<cr>", "Hover" },
+      ["k"] = { "<cmd>lua vim.lsp.buf.signature_help()<cr>", "Signature help" },
+      ["n"] = { "<cmd>lua vim.lsp.buf.rename()<cr>", "Rename" },
+      ["a"] = { "<cmd>lua vim.lsp.buf.code_action()<cr>", "Code actions" },
+      ["f"] = { "<cmd>lua vim.lsp.buf.formatting()<cr>", "Format" },
+      ["l"] = { "<cmd>lua vim.diagnostic.open_float()<cr>", "Open float" },
+      ["t"] = {
+        name = "TypeScript",
+        ["a"] = { "<cmd>TypescriptAddMissingImports<CR>", "Add missing imports" },
+        ["o"] = { "<cmd>TypescriptOrganizeImports<CR>", "Organize imports" },
+        ["u"] = { "<cmd>TypescriptRemoveUnused<CR>", "Remove unused" },
+        ["f"] = { "<cmd>TypescriptFixAll<CR>", "Fix all" },
+        ["g"] = { "<cmd>TypescriptGoToSourceDefinition<CR>", "Go to source definition" },
+        ["r"] = { "<cmd>TypescriptRenameFile<CR>", "Rename file" },
+      }
+    }
   }
 
   whichKey.setup(setup)
