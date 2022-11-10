@@ -112,6 +112,9 @@ return packer.startup(function(use)
   -- UI
   use("goolord/alpha-nvim")
 
+  -- Misc
+  use("lewis6991/impatient.nvim")
+
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()
 	end
