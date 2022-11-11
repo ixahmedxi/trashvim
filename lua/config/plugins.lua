@@ -112,6 +112,7 @@ return packer.startup(function(use)
 
   -- UI
   use("goolord/alpha-nvim")
+  use("stevearc/dressing.nvim")
 
   -- Misc
   use("lewis6991/impatient.nvim")
