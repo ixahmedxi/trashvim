@@ -54,6 +54,7 @@ return packer.startup(function(use)
   use("nvim-lualine/lualine.nvim")
   use({'akinsho/bufferline.nvim', tag = "v3.*"})
   use("famiu/bufdelete.nvim")
+  use("lukas-reineke/indent-blankline.nvim")
 
   -- Colorschemes
   use("kvrohit/mellow.nvim")
