@@ -1,3 +1,5 @@
 import("indent_blankline", function (indentBlankline)
-  indentBlankline.setup()
+  indentBlankline.setup({
+   show_current_context = true,
+  })
 end)
