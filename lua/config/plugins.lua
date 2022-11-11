@@ -109,6 +109,8 @@ return packer.startup(function(use)
   -- Editing
   use("max397574/better-escape.nvim")
   use("ethanholz/nvim-lastplace")
+  use("numToStr/Comment.nvim")
+  use("JoosepAlviste/nvim-ts-context-commentstring")
 
   -- UI
   use("goolord/alpha-nvim")
