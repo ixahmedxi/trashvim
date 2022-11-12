@@ -74,7 +74,7 @@ import("which-key", function (whichKey)
       ["s"] = { "<cmd>SymbolsOutline<cr>", "Toggle symbols outline" },
       ["n"] = { ":IncRename ", "Rename" },
       ["a"] = { "<cmd>CodeActionMenu<cr>", "Code actions" },
-      ["f"] = { "<cmd>lua vim.lsp.buf.formatting()<cr>", "Format" },
+      ["f"] = { "<cmd>lua vim.lsp.buf.format({ async = true })<cr>", "Format" },
       ["l"] = { "<cmd>lua vim.diagnostic.open_float()<cr>", "Open float" },
       ["t"] = {
         name = "TypeScript",

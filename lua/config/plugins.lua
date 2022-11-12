@@ -108,6 +108,8 @@ return packer.startup(function(use)
     cmd = 'CodeActionMenu',
   })
   use("kosayoda/nvim-lightbulb")
+  use("jose-elias-alvarez/null-ls.nvim")
+  use("jayp0521/mason-null-ls.nvim")
 
   -- Editing
   use("max397574/better-escape.nvim")
