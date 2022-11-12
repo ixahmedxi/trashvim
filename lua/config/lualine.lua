@@ -39,6 +39,6 @@ import("lualine", function (lualine)
       lualine_z = {}
     },
     inactive_winbar = {},
-    extensions = { 'neo-tree' }
+    extensions = { 'neo-tree', 'toggleterm' }
   })
 end)

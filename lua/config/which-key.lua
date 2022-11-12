@@ -95,6 +95,13 @@ import("which-key", function (whichKey)
       ["v"] = { "<cmd>HopVertical<cr>", "Vertical" },
       ["w"] = { "<cmd>HopWord<cr>", "Word" },
     },
+    ["t"] = {
+      name = "Terminal",
+      ["a"] = { "<cmd>1ToggleTerm<cr>", "Toggle terminal 1" },
+      ["s"] = { "<cmd>2ToggleTerm<cr>", "Toggle terminal 2" },
+      ["d"] = { "<cmd>3ToggleTerm<cr>", "Toggle terminal 3" },
+      ["t"] = { "<cmd>ToggleTermToggleAll<cr>", "Toggle all" },
+    }
   }
 
   whichKey.setup(setup)
