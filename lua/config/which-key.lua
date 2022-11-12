@@ -24,6 +24,7 @@ import("which-key", function (whichKey)
     ["q"] = { "<cmd>q<cr>", "Quit" },
     ["e"] = { "<cmd>Neotree toggle<cr>", "Toggle Explorer" },
     ["n"] = { "<cmd>nohl<cr>", "No highlight" },
+    ["c"] = {"<cmd>lua require('telescope.builtin').colorscheme()<cr>", "Change colorscheme" },
     ["b"] = {
       name = "Buffers",
       ["p"] = { "<cmd>BufferLinePick<cr>", "Pick" },
@@ -85,7 +86,15 @@ import("which-key", function (whichKey)
         ["r"] = { "<cmd>TypescriptRenameFile<CR>", "Rename file" },
       }
     },
-    ["c"] = {"<cmd>lua require('telescope.builtin').colorscheme()<cr>", "Change colorscheme" }
+    ["h"] = {
+      name = "Hop",
+      ["h"] = { "<cmd>HopChar2<cr>", "2 Chars" },
+      ["f"] = { "<cmd>HopChar1<cr>", "1 Chars" },
+      ["p"] = { "<cmd>HopPattern<cr>", "Pattern" },
+      ["l"] = { "<cmd>HopLineStart<cr>", "Line start" },
+      ["v"] = { "<cmd>HopVertical<cr>", "Vertical" },
+      ["w"] = { "<cmd>HopWord<cr>", "Word" },
+    },
   }
 
   whichKey.setup(setup)

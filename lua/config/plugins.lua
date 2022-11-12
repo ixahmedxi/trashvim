@@ -115,6 +115,7 @@ return packer.startup(function(use)
   use("numToStr/Comment.nvim")
   use("JoosepAlviste/nvim-ts-context-commentstring")
   use("abecodes/tabout.nvim")
+  use("phaazon/hop.nvim")
 
   -- UI
   use("goolord/alpha-nvim")
