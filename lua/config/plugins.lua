@@ -112,6 +112,7 @@ return packer.startup(function(use)
   use("ethanholz/nvim-lastplace")
   use("numToStr/Comment.nvim")
   use("JoosepAlviste/nvim-ts-context-commentstring")
+  use("abecodes/tabout.nvim")
 
   -- UI
   use("goolord/alpha-nvim")
