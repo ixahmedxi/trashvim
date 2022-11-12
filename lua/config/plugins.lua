@@ -118,6 +118,7 @@ return packer.startup(function(use)
   use("JoosepAlviste/nvim-ts-context-commentstring")
   use("abecodes/tabout.nvim")
   use("phaazon/hop.nvim")
+  use("kylechui/nvim-surround")
 
   -- UI
   use("goolord/alpha-nvim")
