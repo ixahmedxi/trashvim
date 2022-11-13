@@ -1,6 +1,7 @@
 require("import")
 require("config.plugins")
 require("config.impatient")
+require("config.notify")
 require("config.options")
 require("config.keymaps")
 require("config.colorschemes")
