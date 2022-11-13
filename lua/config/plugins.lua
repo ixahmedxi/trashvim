@@ -57,6 +57,7 @@ return packer.startup(function(use)
 	use("lukas-reineke/indent-blankline.nvim")
 	use("kevinhwang91/nvim-hlslens")
 	use("petertriho/nvim-scrollbar")
+  use("yamatsum/nvim-cursorline")
 
 	-- Colorschemes
 	use("kvrohit/mellow.nvim")
