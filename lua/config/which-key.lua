@@ -85,6 +85,15 @@ import("which-key", function(whichKey)
 				["g"] = { "<cmd>TypescriptGoToSourceDefinition<CR>", "Go to source definition" },
 				["r"] = { "<cmd>TypescriptRenameFile<CR>", "Rename file" },
 			},
+      ["u"] = {
+        name = "Trouble",
+        r = { "<cmd>TroubleToggle lsp_references<cr>", "References" },
+        f = { "<cmd>TroubleToggle lsp_definitions<cr>", "Definitions" },
+        d = { "<cmd>TroubleToggle document_diagnostics<cr>", "Diagnostics" },
+        q = { "<cmd>TroubleToggle quickfix<cr>", "QuickFix" },
+        l = { "<cmd>TroubleToggle loclist<cr>", "LocationList" },
+        w = { "<cmd>TroubleToggle workspace_diagnostics<cr>", "Workspace Diagnostics" },
+      }
 		},
 		["h"] = {
 			name = "Hop",
