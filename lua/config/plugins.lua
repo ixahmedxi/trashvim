@@ -57,7 +57,7 @@ return packer.startup(function(use)
 	use("lukas-reineke/indent-blankline.nvim")
 	use("kevinhwang91/nvim-hlslens")
 	use("petertriho/nvim-scrollbar")
-  use("yamatsum/nvim-cursorline")
+	use("yamatsum/nvim-cursorline")
 
 	-- Colorschemes
 	use("kvrohit/mellow.nvim")
@@ -112,10 +112,10 @@ return packer.startup(function(use)
 	use("kosayoda/nvim-lightbulb")
 	use("jose-elias-alvarez/null-ls.nvim")
 	use("jayp0521/mason-null-ls.nvim")
-  use("gpanders/editorconfig.nvim")
-  use("folke/trouble.nvim")
-  use("smiteshp/nvim-navic")
-  use("utilyre/barbecue.nvim")
+	use("gpanders/editorconfig.nvim")
+	use("folke/trouble.nvim")
+	use("smiteshp/nvim-navic")
+	use("utilyre/barbecue.nvim")
 
 	-- Editing
 	use("max397574/better-escape.nvim")
@@ -125,7 +125,7 @@ return packer.startup(function(use)
 	use("abecodes/tabout.nvim")
 	use("phaazon/hop.nvim")
 	use("kylechui/nvim-surround")
-  use("sitiom/nvim-numbertoggle")
+	use("sitiom/nvim-numbertoggle")
 
 	-- UI
 	use("goolord/alpha-nvim")
@@ -134,7 +134,7 @@ return packer.startup(function(use)
 	-- Misc
 	use("lewis6991/impatient.nvim")
 	use("akinsho/toggleterm.nvim")
-  use("rcarriga/nvim-notify")
+	use("rcarriga/nvim-notify")
 
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()
