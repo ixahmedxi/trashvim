@@ -111,6 +111,7 @@ return packer.startup(function(use)
 	use("kosayoda/nvim-lightbulb")
 	use("jose-elias-alvarez/null-ls.nvim")
 	use("jayp0521/mason-null-ls.nvim")
+  use("gpanders/editorconfig.nvim")
 
 	-- Editing
 	use("max397574/better-escape.nvim")
