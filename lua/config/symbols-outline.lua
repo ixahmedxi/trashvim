@@ -1,3 +1,3 @@
-import("symbols-outline", function (symbolsOutline)
-  symbolsOutline.setup()
+import("symbols-outline", function(symbolsOutline)
+	symbolsOutline.setup()
 end)

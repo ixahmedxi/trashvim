@@ -1,3 +1,3 @@
-import("hop", function (hop)
-  hop.setup()
+import("hop", function(hop)
+	hop.setup()
 end)

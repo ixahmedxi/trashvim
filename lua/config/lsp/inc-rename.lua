@@ -1,3 +1,3 @@
-import("inc_rename", function (rename)
-  rename.setup()
+import("inc_rename", function(rename)
+	rename.setup()
 end)

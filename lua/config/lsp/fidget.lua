@@ -1,3 +1,3 @@
-import("fidget", function (fidget)
-  fidget.setup()
+import("fidget", function(fidget)
+	fidget.setup()
 end)

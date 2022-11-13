@@ -31,7 +31,7 @@ local options = {
 	wrap = false,
 	scrolloff = 8,
 	sidescrolloff = 8,
-  guicursor = ""
+	guicursor = "",
 }
 
 for k, v in pairs(options) do

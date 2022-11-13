@@ -1,5 +1,5 @@
-import("tabout", function (tabout)
-  tabout.setup({
-    tabkey = "<Tab>",
-  })
+import("tabout", function(tabout)
+	tabout.setup({
+		tabkey = "<Tab>",
+	})
 end)
