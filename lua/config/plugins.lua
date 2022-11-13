@@ -122,6 +122,7 @@ return packer.startup(function(use)
 	use("abecodes/tabout.nvim")
 	use("phaazon/hop.nvim")
 	use("kylechui/nvim-surround")
+  use("sitiom/nvim-numbertoggle")
 
 	-- UI
 	use("goolord/alpha-nvim")
