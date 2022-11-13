@@ -114,6 +114,8 @@ return packer.startup(function(use)
 	use("jayp0521/mason-null-ls.nvim")
   use("gpanders/editorconfig.nvim")
   use("folke/trouble.nvim")
+  use("smiteshp/nvim-navic")
+  use("utilyre/barbecue.nvim")
 
 	-- Editing
 	use("max397574/better-escape.nvim")
