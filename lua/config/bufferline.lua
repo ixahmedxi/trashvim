@@ -13,8 +13,8 @@ import("bufferline", function(bufferline)
 			offsets = {
 				{
 					filetype = "neo-tree",
-					text = "",
-					padding = 0,
+					text = "File Explorer",
+					padding = 2,
 				},
 			},
 		},
