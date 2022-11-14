@@ -49,7 +49,7 @@ return packer.startup(function(use)
 	})
 	use("folke/which-key.nvim")
 
-	-- Buffers
+	-- Buffers & navigation
 	use("lewis6991/gitsigns.nvim")
 	use("nvim-lualine/lualine.nvim")
 	use({ "akinsho/bufferline.nvim", tag = "v3.*" })
@@ -58,6 +58,8 @@ return packer.startup(function(use)
 	use("kevinhwang91/nvim-hlslens")
 	use("petertriho/nvim-scrollbar")
 	use("yamatsum/nvim-cursorline")
+  use("brenoprata10/nvim-highlight-colors")
+  use("ThePrimeagen/harpoon")
 
 	-- Colorschemes
 	use("kvrohit/mellow.nvim")
