@@ -1,5 +1,5 @@
-require("import")
 require("config.plugins")
+require("import")
 require("config.impatient")
 require("config.options")
 require("config.notify")
