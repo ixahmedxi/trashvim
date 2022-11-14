@@ -35,5 +35,5 @@ import({ "telescope", "telescope.actions" }, function(modules)
 
 	telescope.load_extension("fzf")
 	telescope.load_extension("project")
-  telescope.load_extension("harpoon")
+	telescope.load_extension("harpoon")
 end)

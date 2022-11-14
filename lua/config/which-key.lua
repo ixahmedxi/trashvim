@@ -55,7 +55,7 @@ import("which-key", function(whichKey)
 			["s"] = { "<cmd>lua require('telescope.builtin').find_files()<CR>", "Files" },
 			["h"] = { "<cmd>lua require('telescope.builtin').help_tags()<CR>", "Help tags" },
 			["b"] = { "<cmd>lua require('telescope.builtin').buffers()<CR>", "Buffers" },
-      ["m"] = { "<cmd>lua require('harpoon.ui').toggle_quick_menu()<cr>", "Marked files" }
+			["m"] = { "<cmd>lua require('harpoon.ui').toggle_quick_menu()<cr>", "Marked files" },
 		},
 		["g"] = {
 			name = "Git",
@@ -86,15 +86,15 @@ import("which-key", function(whichKey)
 				["g"] = { "<cmd>TypescriptGoToSourceDefinition<CR>", "Go to source definition" },
 				["r"] = { "<cmd>TypescriptRenameFile<CR>", "Rename file" },
 			},
-      ["u"] = {
-        name = "Trouble",
-        r = { "<cmd>TroubleToggle lsp_references<cr>", "References" },
-        f = { "<cmd>TroubleToggle lsp_definitions<cr>", "Definitions" },
-        d = { "<cmd>TroubleToggle document_diagnostics<cr>", "Diagnostics" },
-        q = { "<cmd>TroubleToggle quickfix<cr>", "QuickFix" },
-        l = { "<cmd>TroubleToggle loclist<cr>", "LocationList" },
-        w = { "<cmd>TroubleToggle workspace_diagnostics<cr>", "Workspace Diagnostics" },
-      }
+			["u"] = {
+				name = "Trouble",
+				r = { "<cmd>TroubleToggle lsp_references<cr>", "References" },
+				f = { "<cmd>TroubleToggle lsp_definitions<cr>", "Definitions" },
+				d = { "<cmd>TroubleToggle document_diagnostics<cr>", "Diagnostics" },
+				q = { "<cmd>TroubleToggle quickfix<cr>", "QuickFix" },
+				l = { "<cmd>TroubleToggle loclist<cr>", "LocationList" },
+				w = { "<cmd>TroubleToggle workspace_diagnostics<cr>", "Workspace Diagnostics" },
+			},
 		},
 		["h"] = {
 			name = "Hop",
@@ -106,7 +106,7 @@ import("which-key", function(whichKey)
 			["w"] = { "<cmd>HopWord<cr>", "Word" },
 		},
 		["t"] = { "<cmd>ToggleTermToggleAll<cr>", "Toggle terminals" },
-    ["m"] = { "<cmd>lua require('harpoon.mark').add_file()<cr>", "Mark file" }
+		["m"] = { "<cmd>lua require('harpoon.mark').add_file()<cr>", "Mark file" },
 	}
 
 	whichKey.setup(setup)

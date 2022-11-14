@@ -1,3 +1,3 @@
-import("harpoon", function (harpoon)
-  harpoon.setup()
+import("harpoon", function(harpoon)
+	harpoon.setup()
 end)

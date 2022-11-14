@@ -1,3 +1,3 @@
-import("barbecue", function (barbecue)
-  barbecue.setup()
+import("barbecue", function(barbecue)
+	barbecue.setup()
 end)

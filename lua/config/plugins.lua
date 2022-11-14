@@ -58,8 +58,8 @@ return packer.startup(function(use)
 	use("kevinhwang91/nvim-hlslens")
 	use("petertriho/nvim-scrollbar")
 	use("yamatsum/nvim-cursorline")
-  use("brenoprata10/nvim-highlight-colors")
-  use("ThePrimeagen/harpoon")
+	use("brenoprata10/nvim-highlight-colors")
+	use("ThePrimeagen/harpoon")
 
 	-- Colorschemes
 	use("kvrohit/mellow.nvim")
@@ -136,7 +136,7 @@ return packer.startup(function(use)
 	use("lewis6991/impatient.nvim")
 	use("akinsho/toggleterm.nvim")
 	use("rcarriga/nvim-notify")
-  use("ThePrimeagen/vim-be-good")
+	use("ThePrimeagen/vim-be-good")
 
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()
