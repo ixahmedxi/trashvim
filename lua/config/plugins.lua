@@ -138,6 +138,7 @@ return packer.startup(function(use)
 	use("rcarriga/nvim-notify")
 	use("ThePrimeagen/vim-be-good")
 	use("davidgranstrom/nvim-markdown-preview")
+  use("aserowy/tmux.nvim")
 
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()
