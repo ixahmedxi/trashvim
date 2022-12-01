@@ -60,6 +60,7 @@ return packer.startup(function(use)
 	use("yamatsum/nvim-cursorline")
 	use("brenoprata10/nvim-highlight-colors")
 	use("ThePrimeagen/harpoon")
+  use("akinsho/git-conflict.nvim")
 
 	-- Colorschemes
 	use("kvrohit/mellow.nvim")

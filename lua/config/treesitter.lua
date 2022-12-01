@@ -29,7 +29,7 @@ import("nvim-treesitter.configs", function(treesitter)
 		},
 		rainbow = {
 			enable = true,
-			extended_mode = false,
+			extended_mode = true,
 		},
 		autotag = {
 			enable = true,
