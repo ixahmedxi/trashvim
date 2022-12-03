@@ -62,15 +62,8 @@ return packer.startup(function(use)
 	use("ThePrimeagen/harpoon")
   use("akinsho/git-conflict.nvim")
 
-	-- Colorschemes
-	use("kvrohit/mellow.nvim")
-	use("Yazeed1s/oh-lucy.nvim")
+	-- Colorscheme
 	use({ "catppuccin/nvim", as = "catppuccin" })
-	use("marko-cerovac/material.nvim")
-	use("folke/tokyonight.nvim")
-	use("olivercederborg/poimandres.nvim")
-	use("tiagovla/tokyodark.nvim")
-	use("projekt0n/github-nvim-theme")
 
 	-- Treesitter
 	use("nvim-treesitter/nvim-treesitter")
@@ -119,6 +112,7 @@ return packer.startup(function(use)
 	use("folke/trouble.nvim")
 	use("smiteshp/nvim-navic")
 	use("utilyre/barbecue.nvim")
+  use("simrat39/rust-tools.nvim")
 
 	-- Editing
 	use("max397574/better-escape.nvim")
@@ -138,7 +132,6 @@ return packer.startup(function(use)
 	use("akinsho/toggleterm.nvim")
 	use("rcarriga/nvim-notify")
 	use("ThePrimeagen/vim-be-good")
-	use("davidgranstrom/nvim-markdown-preview")
   use("aserowy/tmux.nvim")
 
 	if PACKER_BOOTSTRAP then

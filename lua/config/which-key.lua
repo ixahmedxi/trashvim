@@ -24,7 +24,6 @@ import("which-key", function(whichKey)
 		["q"] = { "<cmd>q<cr>", "Quit" },
 		["e"] = { "<cmd>Neotree toggle<cr>", "Toggle Explorer" },
 		["n"] = { "<cmd>nohl<cr>", "No highlight" },
-		["c"] = { "<cmd>lua require('telescope.builtin').colorscheme()<cr>", "Change colorscheme" },
 		["b"] = {
 			name = "Buffers",
 			["p"] = { "<cmd>BufferLinePick<cr>", "Pick" },
@@ -69,7 +68,7 @@ import("which-key", function(whichKey)
 			["d"] = { "<cmd>lua vim.lsp.buf.definition()<cr>", "Definition" },
 			["T"] = { "<cmd>lua vim.lsp.buf.type_definition()<cr>", "Type definition" },
 			["i"] = { "<cmd>lua vim.lsp.buf.implementation()<cr>", "Implementation" },
-			["r"] = { "<cmd>lua vim.lsp.buf.references()<cr>", "References" },
+			["R"] = { "<cmd>lua vim.lsp.buf.references()<cr>", "References" },
 			["K"] = { "<cmd>lua vim.lsp.buf.hover()<cr>", "Hover" },
 			["k"] = { "<cmd>lua vim.lsp.buf.signature_help()<cr>", "Signature help" },
 			["s"] = { "<cmd>SymbolsOutline<cr>", "Toggle symbols outline" },
@@ -86,6 +85,11 @@ import("which-key", function(whichKey)
 				["g"] = { "<cmd>TypescriptGoToSourceDefinition<CR>", "Go to source definition" },
 				["r"] = { "<cmd>TypescriptRenameFile<CR>", "Rename file" },
 			},
+      ["r"] = {
+        name = "Rust",
+        ["r"] = { "<cmd>RustRun<cr>", "Run" },
+        ["a"] = { "<cmd>RustRunnables<cr>", "Runnables"}
+      },
 			["u"] = {
 				name = "Trouble",
 				r = { "<cmd>TroubleToggle lsp_references<cr>", "References" },
