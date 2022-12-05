@@ -57,6 +57,9 @@ import({ "cmp", "luasnip", "lspkind", "luasnip/loaders/from_vscode" }, function(
 			fields = { "abbr", "kind", "menu" },
 			format = modules.lspkind.cmp_format({
 				mode = "symbol_text",
+        symbol_map = {
+          Copilot = "",
+        },
 				before = function(entry, vim_item)
 					vim_item.menu = ({
 						nvim_lsp = "[LSP]",
@@ -70,6 +73,7 @@ import({ "cmp", "luasnip", "lspkind", "luasnip/loaders/from_vscode" }, function(
 		},
 		sources = {
 			{ name = "nvim_lsp" },
+      { name = "copilot" },
 			{ name = "luasnip" },
 			{ name = "buffer" },
 			{ name = "path" },

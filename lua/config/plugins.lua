@@ -60,7 +60,7 @@ return packer.startup(function(use)
 	use("yamatsum/nvim-cursorline")
 	use("brenoprata10/nvim-highlight-colors")
 	use("ThePrimeagen/harpoon")
-  use("akinsho/git-conflict.nvim")
+	use("akinsho/git-conflict.nvim")
 
 	-- Colorscheme
 	use({ "catppuccin/nvim", as = "catppuccin" })
@@ -90,6 +90,8 @@ return packer.startup(function(use)
 	use("L3MON4D3/LuaSnip")
 	use("rafamadriz/friendly-snippets")
 	use("onsails/lspkind.nvim")
+  use("zbirenbaum/copilot.lua")
+  use("zbirenbaum/copilot-cmp")
 
 	-- LSP
 	use("williamboman/mason.nvim")
@@ -112,7 +114,7 @@ return packer.startup(function(use)
 	use("folke/trouble.nvim")
 	use("smiteshp/nvim-navic")
 	use("utilyre/barbecue.nvim")
-  use("simrat39/rust-tools.nvim")
+	use("simrat39/rust-tools.nvim")
 
 	-- Editing
 	use("max397574/better-escape.nvim")
@@ -132,7 +134,7 @@ return packer.startup(function(use)
 	use("akinsho/toggleterm.nvim")
 	use("rcarriga/nvim-notify")
 	use("ThePrimeagen/vim-be-good")
-  use("aserowy/tmux.nvim")
+	use("aserowy/tmux.nvim")
 
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()
