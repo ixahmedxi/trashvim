@@ -54,11 +54,9 @@ import({ "cmp", "luasnip", "lspkind", "luasnip/loaders/from_vscode" }, function(
 			}),
 		},
 		formatting = {
-			fields = { "kind", "abbr", "menu" },
+			fields = { "abbr", "kind","menu" },
 			format = modules.lspkind.cmp_format({
-				mode = "symbol",
-				maxwidth = 50,
-
+				mode = "symbol_text",
 				before = function(entry, vim_item)
 					vim_item.menu = ({
 						nvim_lsp = "[LSP]",
