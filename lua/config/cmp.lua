@@ -54,7 +54,7 @@ import({ "cmp", "luasnip", "lspkind", "luasnip/loaders/from_vscode" }, function(
 			}),
 		},
 		formatting = {
-			fields = { "abbr", "kind","menu" },
+			fields = { "abbr", "kind", "menu" },
 			format = modules.lspkind.cmp_format({
 				mode = "symbol_text",
 				before = function(entry, vim_item)
@@ -88,7 +88,7 @@ import({ "cmp", "luasnip", "lspkind", "luasnip/loaders/from_vscode" }, function(
 		},
 	})
 
-	modules.cmp.setup.cmdline("/", {
+	modules.cmp.setup.cmdline({ "/", "?" }, {
 		mapping = modules.cmp.mapping.preset.cmdline(),
 		sources = {
 			{ name = "buffer" },
