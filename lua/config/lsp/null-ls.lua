@@ -19,5 +19,21 @@ import({ "mason-null-ls", "null-ls", "mason-null-ls.automatic_setup" }, function
 	})
 
 	-- will setup any installed and configured sources above
-	null_ls.setup()
+	null_ls.setup({
+		on_attach = function(client, bufnr)
+			if client.supports_method("textDocument/formatting") then
+				vim.api.nvim_clear_autocmds({ group = augroup, buffer = bufnr })
+				vim.api.nvim_create_autocmd("BufWritePre", {
+					group = augroup,
+					buffer = bufnr,
+					callback = function()
+						if vim.bo.filetype == "typescriptreact" or vim.bo.filetype == "typescript" then
+							vim.cmd("TypescriptOrganizeImports!")
+						end
+						vim.lsp.buf.format({ bufnr = bufnr })
+					end,
+				})
+			end
+		end,
+	})
 end)
