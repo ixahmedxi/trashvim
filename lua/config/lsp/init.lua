@@ -52,11 +52,13 @@ import({ "mason", "mason-lspconfig", "lspconfig", "cmp_nvim_lsp" }, function(mod
 		function(server_name)
 			local has_custom_opts, custom_opts = pcall(require, "config.lsp.settings." .. server_name)
 
+			local server_opts = opts
+
 			if has_custom_opts then
-				opts = vim.tbl_deep_extend("force", custom_opts, opts)
+				server_opts = vim.tbl_deep_extend("force", custom_opts, opts)
 			end
 
-			modules.lspconfig[server_name].setup(opts)
+			modules.lspconfig[server_name].setup(server_opts)
 		end,
 		["tsserver"] = function()
 			import("typescript", function(typescript)
