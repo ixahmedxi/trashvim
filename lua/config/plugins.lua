@@ -90,8 +90,8 @@ return packer.startup(function(use)
 	use("L3MON4D3/LuaSnip")
 	use("rafamadriz/friendly-snippets")
 	use("onsails/lspkind.nvim")
-  use("zbirenbaum/copilot.lua")
-  use("zbirenbaum/copilot-cmp")
+	use("zbirenbaum/copilot.lua")
+	use("zbirenbaum/copilot-cmp")
 
 	-- LSP
 	use("williamboman/mason.nvim")
@@ -135,6 +135,14 @@ return packer.startup(function(use)
 	use("rcarriga/nvim-notify")
 	use("ThePrimeagen/vim-be-good")
 	use("aserowy/tmux.nvim")
+	use({
+		"folke/persistence.nvim",
+		event = "BufReadPre",
+		module = "persistence",
+		config = function()
+			require("persistence").setup()
+		end,
+	})
 
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()

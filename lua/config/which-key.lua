@@ -85,11 +85,11 @@ import("which-key", function(whichKey)
 				["g"] = { "<cmd>TypescriptGoToSourceDefinition<CR>", "Go to source definition" },
 				["r"] = { "<cmd>TypescriptRenameFile<CR>", "Rename file" },
 			},
-      ["r"] = {
-        name = "Rust",
-        ["r"] = { "<cmd>RustRun<cr>", "Run" },
-        ["a"] = { "<cmd>RustRunnables<cr>", "Runnables"}
-      },
+			["r"] = {
+				name = "Rust",
+				["r"] = { "<cmd>RustRun<cr>", "Run" },
+				["a"] = { "<cmd>RustRunnables<cr>", "Runnables" },
+			},
 			["u"] = {
 				name = "Trouble",
 				r = { "<cmd>TroubleToggle lsp_references<cr>", "References" },
@@ -111,6 +111,12 @@ import("which-key", function(whichKey)
 		},
 		["t"] = { "<cmd>ToggleTermToggleAll<cr>", "Toggle terminals" },
 		["m"] = { "<cmd>lua require('harpoon.mark').add_file()<cr>", "Mark file" },
+		["s"] = {
+			name = "Session",
+			["s"] = { "<cmd>lua require('persistence').load()<cr>", "Load current directory" },
+			["l"] = { "<cmd>lua require('persistence').load({ last = true })<cr>", "Load last session" },
+			["d"] = { "<cmd>lua require('persistence').stop()<cr>", "Stop session" },
+		},
 	}
 
 	whichKey.setup(setup)

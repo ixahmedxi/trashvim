@@ -4,7 +4,7 @@ import("toggleterm", function(toggleterm)
 		terminal_mappings = true,
 		insert_mappings = true,
 		shade_terminals = false,
-		start_in_insert = false,
+		start_in_insert = true,
 	})
 
 	function _G.set_terminal_keymaps()
