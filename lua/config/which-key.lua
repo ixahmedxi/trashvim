@@ -118,7 +118,6 @@ import("which-key", function(whichKey)
 			["v"] = { "<cmd>HopVertical<cr>", "Vertical" },
 			["w"] = { "<cmd>HopWord<cr>", "Word" },
 		},
-		["t"] = { "<cmd>ToggleTermToggleAll<cr>", "Toggle terminals" },
 		["m"] = { "<cmd>lua require('harpoon.mark').add_file()<cr>", "Mark file" },
 		["s"] = {
 			name = "Session",

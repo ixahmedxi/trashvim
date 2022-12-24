@@ -5,6 +5,7 @@ import("toggleterm", function(toggleterm)
 		insert_mappings = true,
 		shade_terminals = false,
 		start_in_insert = true,
+		direction = "float",
 	})
 
 	function _G.set_terminal_keymaps()
