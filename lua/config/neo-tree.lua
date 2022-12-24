@@ -15,9 +15,6 @@ import("neo-tree", function(neoTree)
 		},
 		filesystem = {
 			filtered_items = {
-				always_show = {
-					".gitignore",
-				},
 				never_show = {
 					".git",
 					".DS_Store",
