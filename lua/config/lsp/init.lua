@@ -68,8 +68,8 @@ import({ "mason", "mason-lspconfig", "lspconfig", "cmp_nvim_lsp" }, function(mod
 			end)
 		end,
 		["rust_analyzer"] = function()
-			import("rust-tools", function (rustTools)
-        rustTools.setup({ server = opts })
+			import("rust-tools", function(rustTools)
+				rustTools.setup({ server = opts })
 			end)
 		end,
 	})

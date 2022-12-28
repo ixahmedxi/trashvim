@@ -1,3 +1,3 @@
-import("git-conflict", function (gitConflict)
-  gitConflict.setup()
+import("git-conflict", function(gitConflict)
+	gitConflict.setup()
 end)

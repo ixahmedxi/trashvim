@@ -1,3 +1,3 @@
-import("tmux", function (tmux)
-  tmux.setup()
+import("tmux", function(tmux)
+	tmux.setup()
 end)

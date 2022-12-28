@@ -5,5 +5,6 @@ import("lsp_signature", function(signature)
 			border = "rounded",
 		},
 		toggle_key = "<M-x>",
+		floating_window = false,
 	})
 end)
