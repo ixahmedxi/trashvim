@@ -1,4 +1,5 @@
 import({ "cmp", "luasnip", "lspkind", "luasnip/loaders/from_vscode" }, function(modules)
+	local cmp = modules.cmp
 	modules["luasnip/loaders/from_vscode"].lazy_load()
 
 	local check_backspace = function()
@@ -6,26 +7,27 @@ import({ "cmp", "luasnip", "lspkind", "luasnip/loaders/from_vscode" }, function(
 		return col == 0 or vim.fn.getline("."):sub(col, col):match("%s")
 	end
 
-	modules.cmp.setup({
+	cmp.setup({
 		snippet = {
 			expand = function(args)
 				modules.luasnip.lsp_expand(args.body)
 			end,
 		},
 		mapping = {
-			["<C-k>"] = modules.cmp.mapping.select_prev_item(),
-			["<C-j>"] = modules.cmp.mapping.select_next_item(),
-			["<C-b>"] = modules.cmp.mapping(modules.cmp.mapping.scroll_docs(-1), { "i", "c" }),
-			["<C-f>"] = modules.cmp.mapping(modules.cmp.mapping.scroll_docs(1), { "i", "c" }),
-			["<C-Space>"] = modules.cmp.mapping(modules.cmp.mapping.complete(), { "i", "c" }),
-			["<C-y>"] = modules.cmp.config.disable,
-			["<C-e>"] = modules.cmp.mapping({
-				i = modules.cmp.mapping.abort(),
-				c = modules.cmp.mapping.close(),
+			["<C-k>"] = cmp.mapping.select_prev_item(),
+			["<C-j>"] = cmp.mapping.select_next_item(),
+			["<C-b>"] = cmp.mapping(cmp.mapping.scroll_docs(-1), { "i", "c" }),
+			["<C-f>"] = cmp.mapping(cmp.mapping.scroll_docs(1), { "i", "c" }),
+			["<C-Space>"] = cmp.mapping(cmp.mapping.complete(), { "i", "c" }),
+			["<C-y>"] = cmp.config.disable,
+			["<C-e>"] = cmp.mapping({
+				i = cmp.mapping.abort(),
+				c = cmp.mapping.close(),
 			}),
-			["<Tab>"] = modules.cmp.mapping(function(fallback)
-				if modules.cmp.visible() then
-					modules.cmp.select_next_item()
+			["<CR>"] = cmp.mapping.confirm({ select = false }),
+			["<Tab>"] = cmp.mapping(function(fallback)
+				if cmp.visible() then
+					cmp.select_next_item()
 				elseif modules.luasnip.expandable() then
 					modules.luasnip.expand()
 				elseif modules.luasnip.expand_or_jumpable() then
@@ -39,9 +41,9 @@ import({ "cmp", "luasnip", "lspkind", "luasnip/loaders/from_vscode" }, function(
 				"i",
 				"s",
 			}),
-			["<S-Tab>"] = modules.cmp.mapping(function(fallback)
-				if modules.cmp.visible() then
-					modules.cmp.select_prev_item()
+			["<S-Tab>"] = cmp.mapping(function(fallback)
+				if cmp.visible() then
+					cmp.select_prev_item()
 				elseif modules.luasnip.jumpable(-1) then
 					modules.luasnip.jump(-1)
 				else
@@ -78,12 +80,12 @@ import({ "cmp", "luasnip", "lspkind", "luasnip/loaders/from_vscode" }, function(
 			{ name = "path", group_index = 2 },
 		},
 		confirm_opts = {
-			behavior = modules.cmp.ConfirmBehavior.Replace,
+			behavior = cmp.ConfirmBehavior.Replace,
 			select = false,
 		},
 		window = {
-			completion = modules.cmp.config.window.bordered(),
-			documentation = modules.cmp.config.window.bordered(),
+			completion = cmp.config.window.bordered(),
+			documentation = cmp.config.window.bordered(),
 		},
 		experimental = {
 			ghost_text = false,
@@ -96,16 +98,16 @@ import({ "cmp", "luasnip", "lspkind", "luasnip/loaders/from_vscode" }, function(
 		},
 	})
 
-	modules.cmp.setup.cmdline({ "/", "?" }, {
-		mapping = modules.cmp.mapping.preset.cmdline(),
+	cmp.setup.cmdline({ "/", "?" }, {
+		mapping = cmp.mapping.preset.cmdline(),
 		sources = {
 			{ name = "buffer" },
 		},
 	})
 
-	modules.cmp.setup.cmdline(":", {
-		mapping = modules.cmp.mapping.preset.cmdline(),
-		sources = modules.cmp.config.sources({
+	cmp.setup.cmdline(":", {
+		mapping = cmp.mapping.preset.cmdline(),
+		sources = cmp.config.sources({
 			{ name = "path" },
 		}, {
 			{ name = "cmdline" },
