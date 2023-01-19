@@ -92,9 +92,7 @@ import({ "cmp", "luasnip", "lspkind", "luasnip/loaders/from_vscode" }, function(
 			native_menu = false,
 		},
 		performance = {
-			trigger_debounce_time = 500,
-			throttle = 550,
-			fetching_timeout = 80,
+			debounce = 150,
 		},
 	})
 

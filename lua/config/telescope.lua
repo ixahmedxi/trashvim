@@ -21,16 +21,6 @@ import({ "telescope", "telescope.actions" }, function(modules)
 				},
 			},
 		},
-		pickers = {
-			find_files = {
-				theme = "dropdown",
-				previewer = false,
-			},
-			buffers = {
-				theme = "dropdown",
-				previewer = false,
-			},
-		},
 	})
 
 	telescope.load_extension("fzf")

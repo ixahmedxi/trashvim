@@ -30,11 +30,7 @@ import({ "alpha", "alpha.themes.dashboard" }, function(modules)
 	}
 
 	dashboard.section.buttons.val = {
-		dashboard.button(
-			"f",
-			"  Find file",
-			"<cmd>lua require('telescope.builtin').find_files(require('telescope.themes').get_dropdown{previewer = false})<cr>"
-		),
+		dashboard.button("f", "  Find file", "<cmd>lua require('telescope.builtin').find_files()<cr>"),
 		dashboard.button("e", "  New file", ":ene <BAR> startinsert <CR>"),
 		dashboard.button("p", "  Find project", ":Telescope project <CR>"),
 		dashboard.button("r", "  Recently used files", ":Telescope oldfiles <CR>"),
