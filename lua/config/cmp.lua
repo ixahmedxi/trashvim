@@ -73,11 +73,11 @@ import({ "cmp", "luasnip", "lspkind", "luasnip/loaders/from_vscode" }, function(
 			}),
 		},
 		sources = {
-			{ name = "nvim_lsp", group_index = 1, keyword_length = 4 },
-			{ name = "copilot", group_index = 1 },
-			{ name = "luasnip", group_index = 2 },
-			{ name = "buffer", group_index = 2 },
-			{ name = "path", group_index = 2 },
+			{ name = "nvim_lsp" },
+			{ name = "copilot" },
+			{ name = "luasnip" },
+			{ name = "buffer" },
+			{ name = "path" },
 		},
 		confirm_opts = {
 			behavior = cmp.ConfirmBehavior.Replace,
