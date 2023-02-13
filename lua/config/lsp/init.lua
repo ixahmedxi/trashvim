@@ -23,7 +23,7 @@ import({ "mason", "mason-lspconfig", "lspconfig", "cmp_nvim_lsp" }, function(mod
 
 	masonLspConfig.setup({
 		ensure_installed = {
-			"sumneko_lua",
+			"lua_ls",
 			"jsonls",
 			"tsserver",
 			"eslint",

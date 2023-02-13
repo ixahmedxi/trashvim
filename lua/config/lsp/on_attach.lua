@@ -8,7 +8,7 @@ M.on_attach = function(client, bufnr)
 		client.server_capabilities.document_formatting = false
 	end
 
-	if client.name == "sumneko_lua" then
+	if client.name == "lua_ls" then
 		client.server_capabilities.document_formatting = false
 	end
 
